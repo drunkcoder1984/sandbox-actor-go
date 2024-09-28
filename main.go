@@ -15,7 +15,7 @@ type (
 func (state *helloActor) Receive(context actor.Context) {
 	switch msg := context.Message().(type) {
 	case *hello:
-		context.Logger().Info("Hello world actorr", slog.String("who", msg.Who))
+		context.Logger().Info("Hello world actor", slog.String("who", msg.Who))
 	}
 }
 
